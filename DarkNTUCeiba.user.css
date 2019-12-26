@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark NTU Ceiba
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    https://github.com/undecV/Dark-NTU-Ceiba
 @author         undecV
 @preprocessor   less
@@ -27,7 +27,7 @@
 @csBlue: #81a2be;
 @csPurple: #b294bb;
 
-@-moz-document url("https://ceiba.ntu.edu.tw/index.php") {
+@-moz-document url("https://ceiba.ntu.edu.tw/index.php"), url("https://ceiba.ntu.edu.tw/") {
     @ceibaGreen3: @csGreen;
     html, body {
         color: @csForeground  !important;
@@ -86,7 +86,7 @@
     }
 }
 
-@-moz-document url("https://ceiba.ntu.edu.tw/student/index.php") {
+@-moz-document url("https://ceiba.ntu.edu.tw/student/index.php"), url("https://ceiba.ntu.edu.tw/student/") {
     html, body {
         color: @csForeground  !important;
         background: @csBackground !important;
