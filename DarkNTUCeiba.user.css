@@ -1,0 +1,233 @@
+/* ==UserStyle==
+@name           Dark NTU Ceiba
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    https://github.com/undecV/Dark-NTU-Ceiba
+@author         undecV
+@preprocessor   less
+==/UserStyle== */
+
+@ccsBlack: #000;
+
+/**
+ * Color Theme: Tomorrow Night (MIT License)
+ * https://github.com/chriskempson/tomorrow-theme
+ */
+
+@csBackground: #1d1f21;
+@csCurrentLine: #282a2e;
+@csSelection: #373b41;
+@csForeground: #c5c8c6;
+@csComment: #969896;
+@csRed: #cc6666;
+@csOrange: #de935f;
+@csYellow: #f0c674;
+@csGreen: #b5bd68;
+@csAqua: #8abeb7;
+@csBlue: #81a2be;
+@csPurple: #b294bb;
+
+@-moz-document url("https://ceiba.ntu.edu.tw/index.php") {
+    @ceibaGreen3: @csGreen;
+    html, body {
+        color: @csForeground  !important;
+        background: @csBackground !important;
+        font-family: sans-serif !important;
+        height: 100%;
+    }
+    a {
+       color: @csBlue !important;
+    }
+    a:hover {
+        color: @csAqua !important;
+        text-decoration: none !important;
+    }
+    select {
+        color: @csForeground !important;
+        background: @csBackground !important;
+    }
+    select option {
+        color: @csForeground !important;
+        background: @csCurrentLine !important;
+    }
+    div#banner ul li a {
+        color: @csBackground !important;
+    }
+    div#content h1 {
+        color: @csOrange !important;
+        border-bottom: @ceibaGreen3 3px solid !important;
+    }
+    div#content ul li {
+        border-bottom: @ceibaGreen3 1px dotted !important;
+    }
+    div#login {
+        border: 3px @ceibaGreen3 solid !important;
+        border-radius: 20px;
+    }
+    div#login * {
+        background-image: none !important;
+    }
+    div#login .tr * {
+        filter: none !important;
+    }
+    div#login h2 {
+        color: @csOrange !important;
+    }
+    div#contact {
+        background-color: @csCurrentLine !important;
+        border: 3px @ceibaGreen3 dotted !important;
+    }
+    div#contact h2 {
+        color: @csOrange !important;
+    }
+    div#footer {
+        color: @csComment !important;
+        background: @csCurrentLine !important;
+    }
+}
+
+@-moz-document url("https://ceiba.ntu.edu.tw/student/index.php") {
+    html, body {
+        color: @csForeground  !important;
+        background: @csBackground !important;
+        font-family: sans-serif !important;
+        height: 100%;
+    }
+    a {
+       color: @csBlue !important;
+    }
+    a:hover {
+        color: @csAqua !important;
+        text-decoration: none !important;
+    }
+    div#banner ul li a {
+        color: @csBackground !important;
+    }
+    p.note{
+        color: @csRed !important;
+    }
+    table {
+        background-color: @csCurrentLine !important;
+    }
+    th {
+        color: @csForeground  !important;
+        background-color: @csSelection !important;
+    }
+    #wel-msg span.user {
+        color: @csYellow !important;
+    }
+    #nav-pn li {
+        border: none !important;
+        background-color: @csSelection !important;
+    }
+    #main h1 {
+        color: @csOrange !important;
+    }
+    p.select {
+        background-color: @csSelection !important;
+    } 
+    select {
+        color: @csForeground !important;
+        background: @csSelection !important;
+    }
+    select option {
+        color: @csForeground !important;
+        background: @csSelection !important;
+    }
+    div#footer {
+        color: @csComment !important;
+        background: @csCurrentLine !important;
+    }
+}
+
+@-moz-document url-prefix("https://ceiba.ntu.edu.tw/modules/") {
+    html, body {
+        color: @csForeground  !important;
+        background: @ccsBlack !important;
+        font-family: sans-serif !important;
+        height: 100%;
+    }
+    #container {
+        max-width: none;
+        min-height: 100%;
+        background: @csBackground !important;
+    }
+    a {
+       color: @csBlue !important;
+    }
+    a:hover {
+        color: @csAqua !important;
+        text-decoration: none !important;
+    }
+    #sect_cont table {
+        background-color: @csCurrentLine !important;
+    }
+    #sect_cont th {
+        background-color: @csSelection !important;
+    }
+    
+    /* Header */
+    
+    #bn_container {
+        filter: invert(100%) !important;
+    }
+    #co_name {
+        filter: invert(100%) !important;  /* inv it back :( */
+        position: relative !important;
+        color: @csOrange !important;
+    }
+    
+    /* Content */
+    
+    #wel-msg span.user {
+        color: @csYellow !important;
+    }
+    #section h1 {
+        color: @csOrange !important;
+    }
+    
+    /* Content Info */
+
+    p.note{
+        color: @csRed !important;
+    }
+
+    /* Content Syllabus */
+    
+    img[alt="file"] {
+        margin-right: 1em !important;
+    }
+
+    /* Content Homework */
+
+    ul#nav_sect {
+        background-color: @csSelection !important;
+    }
+
+    font[color="red"] {
+        color: @csRed !important;
+    }
+    
+    /* Navi */
+    
+    #nv_container {}
+    div#nav_co > a > div {
+        filter: invert(100%) !important;
+
+    }
+    select {
+        color: @csForeground !important;
+        background: @csBackground !important;
+    }
+    select option {
+        color: @csForeground !important;
+        background: @csCurrentLine !important;
+    }
+    
+    /* Footer */
+
+    #footer {
+        color: @ccsBlack !important;
+    }
+    
+}
