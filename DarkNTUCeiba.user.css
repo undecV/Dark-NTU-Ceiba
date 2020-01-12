@@ -86,7 +86,7 @@
     }
 }
 
-@-moz-document url("https://ceiba.ntu.edu.tw/student/index.php"), url("https://ceiba.ntu.edu.tw/student/") {
+@-moz-document url-prefix("https://ceiba.ntu.edu.tw/student/index.php"), url-prefix("https://ceiba.ntu.edu.tw/student/") {
     html, body {
         color: @csForeground  !important;
         background: @csBackground !important;
